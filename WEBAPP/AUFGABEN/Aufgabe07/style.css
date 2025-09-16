@@ -1,0 +1,26 @@
+.container {
+    background-color: black;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    
+
+}
+
+.redBox {
+
+}
+
+.lilaBox {
+    justify-content: center;
+    background-color: violet;
+    height: 150px;
+    width: 150px;
+}
