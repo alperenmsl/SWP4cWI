@@ -1,0 +1,70 @@
+.container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: 50px;
+}
+ 
+.greenBox {
+    background-color: rgb(54, 227, 103);
+    width: 200px;
+    height: 300px;
+    border-color: black;
+    border-style: inset;
+}
+ 
+.blueBox {
+    background-color: rgb(71, 101, 184);
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-color: black;
+    border-style: inset;
+}
+ 
+.blackBox {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+}
+ 
+.orangeBox {
+    background-color: orange;
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    border-color: black;
+    border-style: inset;
+}
+ 
+ 
+.container2 {
+    width: 250px;
+    height: 250px;
+ 
+    border-color: rgb(0, 0, 0);
+    border-style: inset ;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+ 
+.orangeOutside {
+    background-color: orange;
+    border-color: black ;
+    border-style: inset;
+    width: 100px;
+    height: 100px;  
+}
+ 
