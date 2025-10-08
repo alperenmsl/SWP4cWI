@@ -41,4 +41,24 @@ function getTotalPrice(cars: Car[]): number {
   return total;
 }
 
+function printCars(cars: Car[]): void {
+  console.log("---------- Alle Verfügbaren Autos ----------");
+  for (const c of cars) {
+    console.log(
+      "Brand: " +
+        c.brand +
+        " " +
+        c.model +
+        " | Price: " +
+        c.price +
+        " | Year: " +
+        c.year +
+        "\n"
+    );
+  }
+}
+
+printCars(cars);
 console.log("Gesammt Preis: ", getTotalPrice(cars), "€");
+const expensiveCars = cars.filter((car) => car.price > 20000);
+console.log(expensiveCars);
