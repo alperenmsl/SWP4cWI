@@ -1,4 +1,4 @@
-import { Car } from "../TS OO Objectoriented/Car";
+import { Car } from "./types";
 
 export interface API {
   getAllCars(): Car[];
