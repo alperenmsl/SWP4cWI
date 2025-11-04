@@ -1,6 +1,7 @@
 import Card from "./components/1 Aufgabe Struktur/card";
 import ShoppingList from "./components/2 Aufgabe Komponenten/list";
 import Button from "./components/2 Aufgabe Komponenten/button";
+import CardHolder from "./components/2 Aufgabe Komponenten/cardHolder";
 
 function App() {
   return (
@@ -24,6 +25,14 @@ function App() {
       <h1 className="text-2xl">Button</h1>
 
       <Button input="Sendar" />
+
+      <br />
+
+      <h1 className="text-2xl">Card Holder</h1>
+
+      <br />
+
+      <CardHolder name="Alperen" description="Polizei Auto & Held" />
     </div>
   );
 }
