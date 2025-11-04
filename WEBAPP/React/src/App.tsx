@@ -1,5 +1,6 @@
 import Card from "./components/1 Aufgabe Struktur/card";
 import ShoppingList from "./components/2 Aufgabe Komponenten/list";
+import Button from "./components/2 Aufgabe Komponenten/button";
 
 function App() {
   return (
@@ -17,6 +18,12 @@ function App() {
       <ShoppingList desc="Coffee" />
       <ShoppingList desc="Tea" />
       <ShoppingList desc="Beer" />
+
+      <br />
+
+      <h1 className="text-2xl">Button</h1>
+
+      <Button input="Sendar" />
     </div>
   );
 }
