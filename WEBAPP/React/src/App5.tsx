@@ -1,5 +1,6 @@
 import Cards from "./components/5 Aufgabe Komponenten State/Cards";
 import Counter from "./components/5 Aufgabe Komponenten State/Counter";
+import LightSwtich from "./components/5 Aufgabe Komponenten State/LightSwitch";
 
 function App() {
   return (
@@ -19,8 +20,22 @@ function App() {
 
         <Cards name="Hans Jörg" description="Anwalt" />
 
-        <h1>Aufgabe 5 - Aufgabe 1 Counter</h1>
+        <br />
+        <h1>
+          Aufgabe 5 - <br /> Aufgabe 1 Counter
+        </h1>
+        <br />
         <Counter />
+
+        <br />
+        <h1>
+          Aufgabe 5 - <br /> Aufgabe 2 Lichtschalter
+        </h1>
+        <br />
+        <LightSwtich />
+        <br />
+        <br />
+        <br />
       </div>
     </div>
   );
