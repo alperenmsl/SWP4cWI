@@ -2,42 +2,22 @@ import Cards from "./components/3 Aufgabe ProjectCards/Cards";
 
 function App() {
   return (
-    <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-cols-4 gap-4 p-4">
-      <Cards
-        imageURL="https://thispersondoesnotexist.com/"
-        title="Jason Smith"
-        jobDescription="Bagger Fahrer"
-      />
+    <div>
+      <h1>Aufgabe 3 Tailwind und Properties</h1>
+      <br />
+      <div className="grid grid-cols-2 w-80 gap-4">
+        <Cards title="Jason Smith" jobDescription="Bagger Fahrer" />
 
-      <Cards
-        imageURL="https://thispersondoesnotexist.com/"
-        title="Johnson Thomas"
-        jobDescription="Pilot"
-      />
+        <Cards title="Johnson Thomas" jobDescription="Pilot" />
 
-      <Cards
-        imageURL="https://thispersondoesnotexist.com/"
-        title="Albert Jack"
-        jobDescription="Papst"
-      />
+        <Cards title="Albert Jack" jobDescription="Papst" />
 
-      <Cards
-        imageURL="https://thispersondoesnotexist.com/"
-        title="Müller Mathis"
-        jobDescription="Maler"
-      />
+        <Cards title="Müller Mathis" jobDescription="Maler" />
 
-      <Cards
-        imageURL="https://thispersondoesnotexist.com/"
-        title="Max Müller"
-        jobDescription="Streitschlichter"
-      />
+        <Cards title="Max Müller" jobDescription="Streitschlichter" />
 
-      <Cards
-        imageURL="https://thispersondoesnotexist.com/"
-        title="Hans Jörg"
-        jobDescription="Anwalt"
-      />
+        <Cards title="Hans Jörg" jobDescription="Anwalt" />
+      </div>
     </div>
   );
 }
