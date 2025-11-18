@@ -20,11 +20,17 @@ function App() {
 
   return (
     <div>
-      <h1 className="text-bold">Aufgabe 7 Todo</h1>
-      {todos.map((todo: Todo) => (
-        <Todo title={todo.title} completed={todo.completed} />
-      ))}
-      <div className="grid grid-cols-8 gap-2 "></div>
+      <h1 className="font-bold p-4">Aufgabe 7 - Todo</h1>
+      <br />
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
+      xl:grid-cols-6 gap-4 "
+      >
+        {todos.map((todo: Todo) => (
+          <Todo title={todo.title} completed={todo.completed} />
+        ))}
+      </div>
+      <br />
     </div>
   );
 }
