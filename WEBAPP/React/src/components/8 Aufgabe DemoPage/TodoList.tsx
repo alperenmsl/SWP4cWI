@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Todo from "./Todo";
+import Todo from "../7 Aufgabe UseEffect/Todo";
 import type { Todo as TodoType } from "../../utils/types";
 
 type Props = {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import TodoList from "./components/7 Aufgabe UseEffect/TodoList";
+import TodoList from "./components/8 Aufgabe DemoPage/TodoList";
 import type { Todo } from "./utils/types";
 
 export default function App() {
