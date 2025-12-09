@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "name": "Träume werden wahr",
+    "artists": [{"name": "Mero"}],
+    "images": [{"url": "https://upload.wikimedia.org/wikipedia/en/0/07/Ya_Hero_Ya_Mero_%28official_album_cover%29.png"}]
+  },
+  {
+    "id": "2",
+    "name": "Hobby Hobby",
+    "artists": [{"name": "Mero"}],
+    "images": [{"url": "https://upload.wikimedia.org/wikipedia/en/0/07/Ya_Hero_Ya_Mero_%28official_album_cover%29.png"}]
+  },
+  {
+    "id": "3",
+    "name": "Jay Jay",
+    "artists": [{"name": "Mero"}],
+    "images": [{"url": "https://upload.wikimedia.org/wikipedia/en/0/07/Ya_Hero_Ya_Mero_%28official_album_cover%29.png"}]
+  },
+  {
+    "id": "4",
+    "name": "Baller los",
+    "artists": [{"name": "Mero"}],
+    "images": [{"url": "https://upload.wikimedia.org/wikipedia/en/0/07/Ya_Hero_Ya_Mero_%28official_album_cover%29.png"}]
+  },
+  {
+    "id": "4",
+    "name": "Baller los",
+    "artists": [{"name": "Mero"}],
+    "images": [{"url": "https://upload.wikimedia.org/wikipedia/en/0/07/Ya_Hero_Ya_Mero_%28official_album_cover%29.png"}]
+  },
+  {
+    "id": "5",
+    "name": "Wie Buffon",
+    "artists": [{"name": "Mero"}],
+    "images": [{"url": "https://upload.wikimedia.org/wikipedia/en/0/07/Ya_Hero_Ya_Mero_%28official_album_cover%29.png"}]
+  },
+  {
+    "id": "6",
+    "name": "Enes Meral",
+    "artists": [{"name": "Mero"}],
+    "images": [{"url": "https://upload.wikimedia.org/wikipedia/en/0/07/Ya_Hero_Ya_Mero_%28official_album_cover%29.png"}]
+  },
+  {
+    "id": "7",
+    "name": "Wolke 10",
+    "artists": [{"name": "Mero"}],
+    "images": [{"url": "https://upload.wikimedia.org/wikipedia/en/0/07/Ya_Hero_Ya_Mero_%28official_album_cover%29.png"}]
+  },
+  {
+    "id": "8",
+    "name": "Hops",
+    "artists": [{"name": "Mero"}],
+    "images": [{"url": "https://upload.wikimedia.org/wikipedia/en/0/07/Ya_Hero_Ya_Mero_%28official_album_cover%29.png"}]
+  },
+  {
+    "id": "9",
+    "name": "Intro",
+    "artists": [{"name": "Mero"}],
+    "images": [{"url": "https://upload.wikimedia.org/wikipedia/en/0/07/Ya_Hero_Ya_Mero_%28official_album_cover%29.png"}]
+  }
+]
