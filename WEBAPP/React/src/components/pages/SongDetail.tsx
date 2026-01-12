@@ -13,7 +13,7 @@ export default function SongDetail() {
   const [song, setSong] = useState<Song | null>(null);
 
   useEffect(() => {
-    fetch("songs.json")
+    fetch("/songs.json")
       .then((res) => res.json())
       .then((data: Song[]) => {
         const found = data.find((s) => s.id === id);
