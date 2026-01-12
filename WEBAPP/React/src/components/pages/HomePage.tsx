@@ -16,7 +16,7 @@ export default function HomePage() {
           placeholder="Search music..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="p-2 rounded w-full max-w-sm text-black"
+          className="p-2 rounded w-full max-w-sm text-white border border-white"
         />
       </div>
 

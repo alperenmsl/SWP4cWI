@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router";
 
 type Song = {
   id: string;
@@ -15,6 +16,7 @@ type Props = {
 export default function MusicFinder({ search }: Props) {
   const [songs, setSongs] = useState<Song[]>([]);
   const [filteredSongs, setFilteredSongs] = useState<Song[]>([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("/songs.json")
@@ -37,6 +39,7 @@ export default function MusicFinder({ search }: Props) {
       {filteredSongs.map((song) => (
         <div
           key={song.id}
+          onClick={() => navigate(`/song/${song.id}`)}
           className="bg-gray-700 p-2 rounded hover:bg-gray-600 cursor-pointer"
         >
           <img

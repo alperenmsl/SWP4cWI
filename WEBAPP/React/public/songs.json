@@ -1,62 +1,56 @@
 [
   {
     "id": "1",
-    "name": "Träume werden wahr",
-    "artists": [{"name": "Mero"}],
-    "images": [{"url": "https://upload.wikimedia.org/wikipedia/en/0/07/Ya_Hero_Ya_Mero_%28official_album_cover%29.png"}]
+    "name": "lovely",
+    "artists": [{ "name": "Billie Eilish" }],
+    "images": [{ "url": "https://i.scdn.co/image/ab67616d0000b2738a3f0a3ca7929dea23cd274c" }]
   },
   {
     "id": "2",
-    "name": "Hobby Hobby",
-    "artists": [{"name": "Mero"}],
-    "images": [{"url": "https://upload.wikimedia.org/wikipedia/en/0/07/Ya_Hero_Ya_Mero_%28official_album_cover%29.png"}]
+    "name": "Ocean Eyes",
+    "artists": [{ "name": "Billie Eilish" }],
+    "images": [{ "url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Billie_Eilish_-_Ocean_Eyes.png/250px-Billie_Eilish_-_Ocean_Eyes.png" }]
   },
   {
     "id": "3",
-    "name": "Jay Jay",
-    "artists": [{"name": "Mero"}],
-    "images": [{"url": "https://upload.wikimedia.org/wikipedia/en/0/07/Ya_Hero_Ya_Mero_%28official_album_cover%29.png"}]
+    "name": "When the Party's Over",
+    "artists": [{ "name": "Billie Eilish" }],
+    "images": [{ "url": "https://www.billboard.com/wp-content/uploads/media/billie-eilish-when-the-partys-over-MV-vid-2018-billboard-1548.jpg?w=1024" }]
   },
   {
     "id": "4",
-    "name": "Baller los",
-    "artists": [{"name": "Mero"}],
-    "images": [{"url": "https://upload.wikimedia.org/wikipedia/en/0/07/Ya_Hero_Ya_Mero_%28official_album_cover%29.png"}]
-  },
-  {
-    "id": "4",
-    "name": "Baller los",
-    "artists": [{"name": "Mero"}],
-    "images": [{"url": "https://upload.wikimedia.org/wikipedia/en/0/07/Ya_Hero_Ya_Mero_%28official_album_cover%29.png"}]
+    "name": "Someone You Loved",
+    "artists": [{ "name": "Lewis Capaldi" }],
+    "images": [{ "url": "https://i1.sndcdn.com/artworks-000677174977-d6v04a-t500x500.jpg" }]
   },
   {
     "id": "5",
-    "name": "Wie Buffon",
-    "artists": [{"name": "Mero"}],
-    "images": [{"url": "https://upload.wikimedia.org/wikipedia/en/0/07/Ya_Hero_Ya_Mero_%28official_album_cover%29.png"}]
+    "name": "Summertime Sadness",
+    "artists": [{ "name": "Lana Del Rey" }],
+    "images": [{ "url": "https://upload.wikimedia.org/wikipedia/en/2/22/SummertimeSadnessOfficial.png" }]
   },
   {
     "id": "6",
-    "name": "Enes Meral",
-    "artists": [{"name": "Mero"}],
-    "images": [{"url": "https://upload.wikimedia.org/wikipedia/en/0/07/Ya_Hero_Ya_Mero_%28official_album_cover%29.png"}]
+    "name": "Easy On Me",
+    "artists": [{ "name": "Adele" }],
+    "images": [{ "url": "https://i.scdn.co/image/ab67616d0000b273c6b577e4c4a6d326354a89f7" }]
   },
   {
     "id": "7",
-    "name": "Wolke 10",
-    "artists": [{"name": "Mero"}],
-    "images": [{"url": "https://upload.wikimedia.org/wikipedia/en/0/07/Ya_Hero_Ya_Mero_%28official_album_cover%29.png"}]
+    "name": "Yellow",
+    "artists": [{ "name": "Coldplay" }],
+    "images": [{ "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Yellow_cover_art.JPG/250px-Yellow_cover_art.JPG" }]
   },
   {
     "id": "8",
-    "name": "Hops",
-    "artists": [{"name": "Mero"}],
-    "images": [{"url": "https://upload.wikimedia.org/wikipedia/en/0/07/Ya_Hero_Ya_Mero_%28official_album_cover%29.png"}]
+    "name": "Stay Alive",
+    "artists": [{ "name": "José González" }],
+    "images": [{ "url": "https://upload.wikimedia.org/wikipedia/en/3/36/Bee_Gees_Stayin_Alive.jpg" }]
   },
   {
     "id": "9",
     "name": "Intro",
-    "artists": [{"name": "Mero"}],
-    "images": [{"url": "https://upload.wikimedia.org/wikipedia/en/0/07/Ya_Hero_Ya_Mero_%28official_album_cover%29.png"}]
+    "artists": [{ "name": "The xx" }],
+    "images": [{ "url": "https://i.ytimg.com/vi/8EIJB_zHw94/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCs2N3GTezMCaG94r4llzuOkhxhcQ" }]
   }
 ]
