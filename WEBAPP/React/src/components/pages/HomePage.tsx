@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import MusicFinder from "../9 Projekt Musik WebApp/MusicList";
+import { useState } from "react";
+import MusicFinder from "../9 Projekt Musik WebApp/MusicFinder";
 
 export default function HomePage() {
   const [search, setSearch] = useState("");
