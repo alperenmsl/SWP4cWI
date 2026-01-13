@@ -9,7 +9,7 @@ interface Todo {
 }
 
 export default function App() {
-  const [todos, setTodos] = useState<Todo[]>([]); // useState damit wir uns die Todos von dem API merken können
+  const [todos, setTodos] = useState<Todo[]>([]); // useState damit wir uns die Todos von dem API merken können // Todo[] -> todos ist ein Array von Todo-Objekten
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/todos")
