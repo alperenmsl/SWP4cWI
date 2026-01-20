@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
 import MusicFinder from "../9 Projekt Musik WebApp/MusicFinder";
 
 export default function HomePage() {
