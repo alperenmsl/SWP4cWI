@@ -1,7 +1,5 @@
-import React from "react";
-import Card from "../1 Aufgabe Struktur/card";
-import Button from "../6 Aufgabe Passing Functions/Button";
 import { Link } from "react-router";
+import Card from "../1 Aufgabe Struktur/card";
 
 export default function Page1() {
   return (

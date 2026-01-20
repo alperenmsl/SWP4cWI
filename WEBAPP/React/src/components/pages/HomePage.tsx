@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import MusicFinder from "../9 Projekt Musik WebApp/MusicFinder";
 

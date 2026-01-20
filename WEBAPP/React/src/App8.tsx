@@ -1,6 +1,5 @@
 import { useState } from "react";
 import TodoList from "./components/8 Aufgabe DemoPage/TodoList";
-import type { Todo } from "./utils/types";
 
 export default function App() {
   const [search, setSearch] = useState("");

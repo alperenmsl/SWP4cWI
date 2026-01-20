@@ -1,8 +1,3 @@
-import React from "react";
-
-type Props = {
-  input: string;
-};
 
 export default function Button({ input }: { input: string }) {
   return (
