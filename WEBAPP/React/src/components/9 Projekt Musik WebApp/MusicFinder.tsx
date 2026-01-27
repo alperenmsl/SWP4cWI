@@ -54,9 +54,9 @@ export default function MusicFinder({ search }: Props) {
         for (const name of names) {
           const res = await fetch(
             `https://www.theaudiodb.com/api/v1/json/2/search.php?s=${encodeURIComponent(
-              name
+              name,
             )}`,
-            { signal: controller.signal }
+            { signal: controller.signal },
           );
 
           const data = await res.json();

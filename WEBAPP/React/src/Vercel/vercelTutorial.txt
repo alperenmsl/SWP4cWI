@@ -1,0 +1,6 @@
+https://swp-4c-wi.vercel.app/
+
+1. Github Importieren
+2. Richtiges Verzeichnis auswählen -> In VSC das Verzeichnis auswählen wo man  "npm run dev" macht
+3. Dannach Deployen
+4. Falls fehler auftauchen kann man "npm run build" machen, die Errors rausnehmen und anschließend von neu Deployen
