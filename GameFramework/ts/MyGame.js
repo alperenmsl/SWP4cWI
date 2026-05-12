@@ -6,17 +6,17 @@ class MyGame extends Game {
         super(...arguments);
         this.speed = 100;
         this.isGoingRight = true;
+        this.circles = [];
     }
     init() {
         console.log("Game started!");
-        this.c1 = new Circle(100, 100, 50, "rgb(226, 109, 0)");
+        this.circles.push(new Circle(160, 300, 50, "rgb(226, 109, 0)"));
+        this.circles.push(new Circle(300, 300, 50, "rgb(130, 98, 69)"));
         this.r1 = new Rectangle(200, 200, 100, 100, 50, 50, "rgb(0, 0, 255)");
         this.r2 = new Rectangle(300, 300, 100, 100, 50, 50, "rgb(255, 0, 0)");
     }
     update(deltaTime) {
-        if (this.c1) {
-            this.c1.update(deltaTime);
-        }
+        this.circles.forEach((circle) => circle.update(deltaTime));
         if (this.r1) {
             const direction = this.isGoingRight ? 1 : -1;
             this.r1.x += this.speed * direction * deltaTime;
@@ -38,9 +38,7 @@ class MyGame extends Game {
         }
     }
     render(ctx) {
-        if (this.c1) {
-            this.c1.render(ctx);
-        }
+        this.circles.forEach((circle) => circle.render(ctx));
         if (this.r1) {
             this.r1.render(ctx);
         }
