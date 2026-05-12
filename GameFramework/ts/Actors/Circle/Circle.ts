@@ -12,7 +12,6 @@ export class Circle {
   }
 
   render(ctx: CanvasRenderingContext2D): void {
-    // Draw rectangle
 
     ctx.fillStyle = this.color;
     ctx.beginPath();
