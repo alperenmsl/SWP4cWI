@@ -1,7 +1,9 @@
 export class Circle {
-    constructor(x, y, radius, color) {
+    constructor(x, y, radius, speedX, speedY, color) {
         this.x = x;
         this.y = y;
+        this.speedX = speedX;
+        this.speedY = speedY;
         this.radius = radius;
         this.color = color;
     }
@@ -12,6 +14,7 @@ export class Circle {
         ctx.fill();
     }
     update(deltaTime) {
-        this.x += 200 * deltaTime;
+        this.x += this.speedX * deltaTime;
+        this.y += this.speedY * deltaTime;
     }
 }

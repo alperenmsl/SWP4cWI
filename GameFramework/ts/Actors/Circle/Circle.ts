@@ -1,18 +1,28 @@
 export class Circle {
   public x: number;
   public y: number;
+  public speedX: number;
+  public speedY: number;
   public radius: number;
   public color: string;
 
-  constructor(x: number, y: number, radius: number, color: string) {
+  constructor(
+    x: number,
+    y: number,
+    radius: number,
+    speedX: number,
+    speedY: number,
+    color: string,
+  ) {
     this.x = x;
     this.y = y;
+    this.speedX = speedX;
+    this.speedY = speedY;
     this.radius = radius;
     this.color = color;
   }
 
   render(ctx: CanvasRenderingContext2D): void {
-
     ctx.fillStyle = this.color;
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
@@ -20,6 +30,7 @@ export class Circle {
   }
 
   update(deltaTime: number): void {
-    this.x += 200 * deltaTime;
+    this.x += this.speedX * deltaTime;
+    this.y += this.speedY * deltaTime;
   }
 }
