@@ -1,4 +1,5 @@
-export class Rectangle {
+import { Actor } from "../actor.js";
+export class Rectangle implements Actor {
   public x: number;
   public y: number;
   public height: number;

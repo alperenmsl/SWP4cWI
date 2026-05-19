@@ -1,37 +1,31 @@
 import { Game, GameFramework } from "./GameFramework.js";
+import { Actor } from "./Actors/actor.js";
 import { Circle } from "./Actors/Circle/Circle.js";
 import { Rectangle } from "./Actors/Rectangle/Rectangle.js";
+import { Tree } from "./Actors/Tree/Tree.js";
 
 class MyGame extends Game {
-  private speed: number = 100;
+  private speed: number = 300;
   private isGoingRight: boolean = true;
 
-  private circles: Circle[] = [];
+  private actors: Actor[] = [];
 
   private r1?: Rectangle;
   private r2?: Rectangle;
 
   init(): void {
     console.log("Game started!");
-    this.circles.push(new Circle(160, 300, 50, 50, 0, "rgb(226, 109, 0)"));
-    this.circles.push(new Circle(300, 300, 50, 50, 0, "rgb(130, 98, 69)"));
+    this.actors.push(new Circle(160, 300, 50, 200, 0, "rgb(226, 109, 0)"));
+    this.actors.push(new Circle(300, 300, 50, 200, 0, "rgb(130, 98, 69)"));
+    this.actors.push(new Tree(400, 400, 60));
+    this.actors.push(new Tree(200, 200, 60));
 
-    this.r1 = new Rectangle(200, 200, 100, 100, 50, 50, "rgb(0, 0, 255)");
-    this.r2 = new Rectangle(300, 300, 100, 100, 50, 50, "rgb(255, 0, 0)");
+    this.r1 = new Rectangle(200, 200, 100, 100, 50, 50, "rgb(214, 78, 16)");
+    this.r2 = new Rectangle(300, 300, 100, 100, 50, 50, "rgb(188, 161, 93)");
   }
 
   update(deltaTime: number): void {
-    this.circles.forEach((circle) => {
-      circle.update(deltaTime);
-
-      if (circle.x + circle.radius > 800) {
-        circle.x = 800 - circle.radius;
-        circle.speedX *= -1;
-      } else if (circle.x - circle.radius < 0) {
-        circle.x = circle.radius;
-        circle.speedX *= -1;
-      }
-    });
+    this.actors.forEach((actor) => actor.update(deltaTime));
 
     if (this.r1) {
       const direction = this.isGoingRight ? 1 : -1;
@@ -49,23 +43,28 @@ class MyGame extends Game {
     if (this.r2) {
       this.r2.update(deltaTime);
 
-      if (this.r2.x > 800) {
-        this.r2.x = -100;
-        this.r2.y = -100;
+      if (this.r2.x + this.r2.width > 800) {
+        this.r2.x = 800 - this.r2.width;
+        this.r2.speedX *= -1;
+      } else if (this.r2.x < 0) {
+        this.r2.x = 0;
+        this.r2.speedX *= -1;
+      }
+
+      if (this.r2.y + this.r2.height > 600) {
+        this.r2.y = 600 - this.r2.height;
+        this.r2.speedY *= -1;
+      } else if (this.r2.y < 0) {
+        this.r2.y = 0;
+        this.r2.speedY *= -1;
       }
     }
   }
 
   render(ctx: CanvasRenderingContext2D): void {
-    this.circles.forEach((circle) => circle.render(ctx));
-
-    if (this.r1) {
-      this.r1.render(ctx);
-    }
-
-    if (this.r2) {
-      this.r2.render(ctx);
-    }
+    this.actors.forEach((actor) => actor.render(ctx));
+    if (this.r1) this.r1.render(ctx);
+    if (this.r2) this.r2.render(ctx);
   }
 }
 
