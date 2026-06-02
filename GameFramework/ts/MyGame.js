@@ -2,6 +2,8 @@ import { Game, GameFramework } from "./GameFramework.js";
 import { Circle } from "./Actors/Circle/Circle.js";
 import { Rectangle } from "./Actors/Rectangle/Rectangle.js";
 import { Tree } from "./Actors/Tree/Tree.js";
+import { RightMovement } from "./Actors/Movements/RightMovement.js";
+import { LeftMovement } from "./Actors/Movements/LeftMovement.js";
 class MyGame extends Game {
     constructor() {
         super(...arguments);
@@ -11,8 +13,7 @@ class MyGame extends Game {
     }
     init() {
         console.log("Game started!");
-        this.actors.push(new Circle(160, 300, 50, 200, 0, "rgb(226, 109, 0)"));
-        this.actors.push(new Circle(300, 300, 50, 200, 0, "rgb(130, 98, 69)"));
+        this.actors.push(new Circle(new RightMovement(100, 100, 200), 20), new Circle(new LeftMovement(300, 200, 200), 20), new Circle(new RightMovement(500, 300, 200), 20));
         this.actors.push(new Tree(400, 400, 60));
         this.actors.push(new Tree(300, 300, 60));
         this.r1 = new Rectangle(200, 200, 100, 100, 50, 50, "rgb(214, 78, 16)");

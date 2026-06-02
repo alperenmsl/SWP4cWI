@@ -1,53 +1,34 @@
 import { Actor } from "../actor.js";
+import { MoveStrategy } from "../Movements/MoveStrategy.js";
+
 export class Circle implements Actor {
-  public x: number;
-  public y: number;
-  public speedX: number;
-  public speedY: number;
-  public radius: number;
-  public color: string;
+  private radius: number = 10;
 
   constructor(
-    x: number,
-    y: number,
-    radius: number,
-    speedX: number,
-    speedY: number,
-    color: string,
+    private movement: MoveStrategy,
+    radius?: number,
   ) {
-    this.x = x;
-    this.y = y;
-    this.speedX = speedX;
-    this.speedY = speedY;
-    this.radius = radius;
-    this.color = color;
+    if (radius !== undefined) {
+      this.radius = radius;
+    }
   }
 
   render(ctx: CanvasRenderingContext2D): void {
-    ctx.fillStyle = this.color;
+    console.log("in Circle");
+    console.log("POS:", this.movement.getX(), this.movement.getY());
+    ctx.fillStyle = "#099fbd";
     ctx.beginPath();
-    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+    ctx.arc(
+      this.movement.getX(),
+      this.movement.getY(),
+      this.radius,
+      0,
+      Math.PI * 2,
+    );
     ctx.fill();
   }
 
   update(deltaTime: number): void {
-    this.x += this.speedX * deltaTime;
-    this.y += this.speedY * deltaTime;
-
-    if (this.x + this.radius > 800) {
-      this.x = 800 - this.radius;
-      this.speedX *= -1;
-    } else if (this.x - this.radius < 0) {
-      this.x = this.radius;
-      this.speedX *= -1;
-    }
-
-    if (this.y + this.radius > 600) {
-      this.y = 600 - this.radius;
-      this.speedY *= -1;
-    } else if (this.y - this.radius < 0) {
-      this.y = this.radius;
-      this.speedY *= -1;
-    }
+    this.movement.update(deltaTime);
   }
 }
